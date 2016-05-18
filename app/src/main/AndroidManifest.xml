@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brnj.lemonade" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.brnj.lemonade.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.brnj.lemonade.timed_mode"
+            android:label="@string/title_activity_timed_mode"
+            android:parentActivityName="com.brnj.lemonade.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brnj.lemonade.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.brnj.lemonade.race_mode"
+            android:label="@string/title_activity_race_mode"
+            android:parentActivityName="com.brnj.lemonade.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brnj.lemonade.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.brnj.lemonade.arcade_mode"
+            android:label="@string/title_activity_arcade_mode"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.brnj.lemonade.show_score"
+            android:label="@string/title_activity_show_score"
+            android:parentActivityName="com.brnj.lemonade.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brnj.lemonade.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.brnj.lemonade.crazy_mode"
+            android:label="@string/title_activity_crazy_mode"
+            android:parentActivityName="com.brnj.lemonade.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.brnj.lemonade.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
